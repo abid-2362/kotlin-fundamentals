@@ -3,7 +3,9 @@ package com.rsk
 fun main() {
     println("Started...")
 
-    val earth = Planet("Earth", 12742, false)
+    val logger: Logger = NullLogger()
+
+    val earth = Planet("Earth", 12742, logger)
     println("Planet created: Name: ${earth.name}, radius: ${earth.radius}")
     earth.population = 7_000_000_000
     println("${earth.name} Population: ${earth.population}")
