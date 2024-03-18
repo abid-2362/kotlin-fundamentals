@@ -11,7 +11,7 @@ value class Score(val score: Int) {
 class Exam {
     fun score(name: String, studentScore: Score) {
 
-
+        println("Name: $name, Score: $studentScore")
         // ...
     }
 
@@ -22,5 +22,8 @@ class Exam {
 }
 
 fun main() {
+    val score = Score(90)
+    val exam = Exam()
 
+    exam.score("Math", score)
 }
